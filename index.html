@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>!(function () {
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src ="index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          window.WebChat.default(
+            {
+              initPayload: "/greet",
+              customData: { language: "en" },
+              socketUrl: "http://localhost:5005",
+              title: "CRCE Virtual Assistant",
+              subtitle: "Ask me anything"
+              // add other props here
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+    localStorage.clear();
+    </script>
+  </body>
+</html>

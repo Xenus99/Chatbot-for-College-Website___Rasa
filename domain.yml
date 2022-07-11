@@ -1,0 +1,327 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - thank
+  - bot_challenge
+  - website
+  - departments
+  - address
+  - ok
+  - events
+  - contact
+  - fees
+  - principal
+  - newsletter
+  - medium
+  - course_len
+  - parallel_work
+  - affailiation
+  - exam_conduct
+  - notice
+  - cutoff
+  - all_cutoff
+#  - comp_cutoff
+#  - elec_cutoff
+#  - mech_cutoff
+#  - arti_cutoff
+#  - prod_cutoff
+  - eligibility
+  - payments
+  - post_degree_choice
+  - admission_process
+  - college_info
+  - college_vision
+  - college_trustees
+  - local_management
+  - staff
+  - tele_directory
+  - library
+  - curriculars
+  - placements
+  - question_paper_archive
+  - required_attendance
+  - exam_process
+  - student_council
+  - scholarship_scheme
+  - admission_enquiry
+  - staff_login
+  - office_hours
+  - comp_info
+  - elec_info
+  - mech_info
+  - ai_info
+  - it_info
+  - entrance_exam
+  - 2021_cutoff
+  - 2020_cutoff
+  - 2019_cutoff
+  - student_portal
+
+responses:
+  utter_greet:
+  - text: "Hello there, Welcome to Fr. CRCE! 👋"
+
+  utter_welcome:
+  - text: "You're Welcome"
+
+  utter_ask:
+  - text: "If you need any assistance, I'm always here."
+
+  utter_website:
+  - text: "Our College Website is: http://www.frcrce.ac.in/"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "Hi! I am a bot, from Fr. CRCE College"
+
+  utter_more_questions:
+  - text: "What more do you want to know?"
+
+  utter_departments:
+  - text: |
+          Available Courses:
+#
+#          1. Computer Engineering: http://www.frcrce.ac.in/index.php/crce-department/comp-engg/about-compengg
+#          2. Electronics and Computer Science: http://www.frcrce.ac.in/index.php/crce-department/elex-compsci/about-elex-compsci
+#          3. Mechanical Engineering: http://www.frcrce.ac.in/index.php/crce-department/prodengg/about-pro
+#          4. AI & Data Science: http://www.frcrce.ac.in/index.php/crce-department/ai-ds
+
+    buttons:
+      - title: "Computer Engineering"
+        payload: "/comp_info"
+      - title: "Electronics and Computer Science"
+        payload: "/elec_info"
+      - title: "Mechanical Engineering"
+        payload: "/mech_info"
+      - title: "AI & Data Science"
+        payload: "/ai_info"
+
+  utter_address:
+  - text: "The college address is: Fr. Conceicao Rodrigues College Of Engineering, Bandstand Promenade, Mount Mary, Bandra West, Mumbai, Maharashtra 400050"
+
+  utter_events :
+  - text: "Check out the latest events here: http://frcrce.ac.in/index.php/students/events-new"
+
+  utter_contact:
+  - text: |
+          You can reach the College Office with:
+          1. Phone: +91 (22) 6711 4000 / +91 (22) 6711 4100
+          2. E-mail: crce@frcrce.ac.in
+
+  utter_principal:
+  - text: "Principal: Dr. Srija Unnikrishnan: http://www.frcrce.ac.in/index.php/about-us/principal-frcrce"
+
+  utter_newsletter:
+  - text: "College Newsletters: http://www.frcrce.ac.in/index.php/agnel-news-letter"
+
+  utter_medium:
+  - text: "The College is English Medium."
+
+  utter_course_len:
+  - text: "The Courses are 4 years long for Regular Students and 3 years long for Direct Second Year Students (Polytechnic admits)."
+
+  utter_parallel_work:
+  - text: "No! The college work needs exclusive attention. Parallel work would be too hectic."
+
+  utter_affiliation:
+  - text: "The College is Affiliated with Mumbai University."
+
+  utter_notice:
+  - text: "Check out the latest Notices here: http://frcrce.ac.in/index.php/students/crce-notices"
+
+  utter_cutoff:
+  - text: |
+            What year's cutoff do you wish to know?
+
+    buttons:
+      - title: "2021"
+        payload: "/2021_cutoff"
+      - title: "2020"
+        payload: "/2020_cutoff"
+      - title: "2019"
+        payload: "/2019_cutoff"
+
+
+  utter_2021_CET_cutoff:
+  - text: |
+            Cutoff for MHt-CET-2021:
+    image: "MHT-CET Cutoff 2021.png"
+
+  utter_2021_JEE_cutoff:
+  - text: |
+            Cutoff for JEE-2021:
+    image: "JEE Cutoff 2021.png"
+
+  utter_2020_cutoff:
+  - text: |
+            Cutoff for MHT-CET-2020:
+    image: "MHT-CET Cutoff 2020.png"
+
+  utter_2019_cutoff:
+  - text: |
+            Cutoff for MHT-CET-2019:
+    image: "MHT-CET Cutoff 2019.png"
+
+
+  utter_eligibility:
+  - text: "Students with 45% or more in 12th and MH-CET score within the cut-off or Diploma passed with % within cut-off (Direct Second Year)"
+
+  utter_fees:
+  - text: |
+            1. Fees for Bachelor's Degree: Rs. 1.53 Lakh (Rs. 1,53,000)
+            2. Fees for Master's Degree: Rs. 1.34 Lakh (Rs. 1,34,500)
+
+  utter_payments:
+  - text: |
+            1. Fees can be paid physically using demand draft or Online: https://pay.fragnel.edu.in/CRCE/initPay.php
+            2. Payment Details: http://frcrce.ac.in/attachments/article/248/NEFTForm.pdf
+
+  utter_post_degree_choice:
+  - text: |
+            After gaining Bachelor's Degree from the college, you can:
+
+            1. Try for placements provided from college or apply for jobs externally.
+            2. Go for Masters Degree either in the country or abroad.
+            3. Go for Business startup."
+
+  utter_admission_process:
+  - text: |
+            Admission Process:
+
+            1. Under Graduate: http://www.frcrce.ac.in/index.php/admission/under-graduate
+            2. Post Graduate:  http://www.frcrce.ac.in/index.php/admission/post-graduate
+            3. Ph.D:           http://www.frcrce.ac.in/index.php/admission/phd"
+
+  utter_admission_enquiry:
+  - text: |
+            To enquire about the admission process:
+
+            1. Ask the bot about your query OR
+            2. Mail your query to the college using the link: https://docs.google.com/forms/d/17NubS5wQj9WVTHYvQMoQj2lNoyyep-hxrF74LOhQag0/viewform?edit_requested=true
+
+  utter_college_info:
+  - text: |
+            1. About CRCE: http://www.frcrce.ac.in/index.php/about-us/about-crce
+            2. Short Video about CRCE: https://www.youtube.com/watch?v=T_3NAphp1XI
+    image: "fr crce.jfif"
+
+
+  utter_college_vision:
+  - text: "College Vision and Mission: http://www.frcrce.ac.in/index.php/about-us/vision-mission"
+
+  utter_college_trustees:
+  - text: |
+            College Trustees:
+
+            1. Chairman -> Fr. Saturnino
+            2. Vice Chairman -> Fr. Peter D’Souza
+            3. Treasurer -> Fr. Alarico Carvalho
+            4. Secretary -> Fr. Valerian D’Souza
+            5. Member -> Fr. Bento Rodrigues
+
+  utter_local_management:
+  - text: |
+            Local Management Council:
+
+            1. Rev. Fr. Peter D'Souza -> Local Superior
+            2. Rev. Fr. Valerian D'Souza -> Director
+            3. Fr. Trevor Pereira -> Administrator, Balbhavan & Fr. Agnel School
+            4. Bro. Edison Pereira -> In-Charge, Samadhi Seva & Hospitality
+            5. Mr. Richard Castelino -> In-Charge, Financial Controller
+            6. Dr. Srija Unnikrishnan -> Principal, Fr. C.R.C.E.
+            7. Mr. Mangesh Mohan -> I/C Principal, Agnel Technical College
+            8. Mr. Ajay Nagavkar -> Incharge Headmaster, High School & Jr. College
+
+  utter_staff:
+  - text: "Staff Incharge: http://www.frcrce.ac.in/images/crce/pdfs/staffincharges21-22.pdf"
+
+  utter_tele_directory:
+  - text: "College Telephone Directory: http://www.frcrce.ac.in/index.php/about-us/general-info/telephone-directory"
+
+  utter_library:
+  - text: "Library Overview: http://www.frcrce.ac.in/index.php/academics/library/library-overview"
+
+  utter_placements:
+  - text: |
+        1. Campus Placements: http://www.frcrce.ac.in/index.php/students/placements/campus-placement-overview
+        2. Our Recruiters: http://www.frcrce.ac.in/index.php/students/placements/our-recruiters
+        3. Placements Stitstics: http://www.frcrce.ac.in/index.php/students/placements/placement-statistics
+
+  utter_question_paper_archive:
+  - text: "Find all the past question papers in the Question Paper Archive here: http://www.frcrce.ac.in/questionpaper/ArchUE.php"
+
+  utter_required_attendance:
+  - text: "Attendance for all Theory, Tutorial, Practical, Seminar and Project/Dissertation is compulsory. As per the University Ordinance 119, 75 % attendance is compulsory for keeping the term."
+
+  utter_exam_process:
+  - text: "Examination Process: http://www.frcrce.ac.in/index.php/academics/examination/exam-process"
+
+  utter_student_council:
+  - text: |
+        1. Student Council: http://www.frcrce.ac.in/index.php/students/students-council
+        2. Student Forum: http://www.frcrce.ac.in/index.php/students/forums
+
+  utter_scholarship_scheme:
+  - text: |
+        Fr. Conceicao Rodrigues college of Engineering Provides support for various Government and Non-Government scholarships to help needy students for their education. For more: http://frcrce.ac.in/index.php/students/student-info/scholarships
+
+  utter_staff_login:
+  - text: |
+        Staff Login or Sign Up: http://www.frcrce.ac.in/index.php/component/users/?view=login&Itemid=437
+
+  utter_office_hours:
+  - text: |
+        College Office Hours: 9AM to 5PM everyday
+
+  utter_comp_info:
+  - text: |
+        1. About Computer Engineering : http://www.frcrce.ac.in/index.php/crce-department/comp-engg/about-compengg
+        2. Infrastructure : http://www.frcrce.ac.in/index.php/crce-department/comp-engg/comp-engg-infra
+        3. Faculty Members : http://www.frcrce.ac.in/index.php/crce-department/comp-engg/faculty-compengg
+
+  utter_elec_info:
+  - text: |
+        1. About Electronics and Computer Science : http://www.frcrce.ac.in/index.php/crce-department/elex-compsci/about-elex-compsci
+        2. Infrastructure : http://www.frcrce.ac.in/index.php/crce-department/elex-compsci/ecs-infra
+        3. Faculty Members : http://www.frcrce.ac.in/index.php/crce-department/elex-compsci/faculty-elex-compsci
+
+  utter_mech_info:
+  - text: |
+        1. Mechanical Engineering : http://www.frcrce.ac.in/index.php/crce-department/prodengg/about-prod
+        2. Infrastructure : http://www.frcrce.ac.in/index.php/crce-department/prodengg/mechprod-infrastructure
+        3. Faculty Members : http://www.frcrce.ac.in/index.php/crce-department/prodengg/faculty-prod
+
+  utter_ai_info:
+  - text: |
+        1. About Artificial Intellegence and Data Science : http://www.frcrce.ac.in/index.php/crce-department/ai-ds/about-ai-ds
+#        2. Infrastructure : http://www.frcrce.ac.in/index.php/crce-department/prodengg/mechprod-infrastructure
+#        3. Faculty Members : http://www.frcrce.ac.in/index.php/crce-department/prodengg/faculty-prod
+
+#  utter_it_info:
+#  - text: |
+#         About Information Technology: http://www.frcrce.ac.in/index.php/crce-department/infotech/about-it
+
+  utter_entrance_exam:
+  - text: |
+         Students are required to give MHT-CET and JEE Mains entrance exams before admission
+
+  utter_curriculars:
+  - text: |
+         1. Moodle: http://gyan.fragnel.edu.in:2222/moodle
+         2. Academic Calendar: http://www.frcrce.ac.in/index.php/academics/academic-calendar
+         3. Syllabus: http://www.frcrce.ac.in/index.php/academics/tlp/syllabus
+
+  utter_student_portal:
+  - text: |
+         Student Portal: http://granth.fragnel.edu.in:5186/pinfo/index.php
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

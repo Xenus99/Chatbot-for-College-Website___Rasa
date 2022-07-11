@@ -1,0 +1,81 @@
+version: "2.0"
+
+rules:
+
+- rule: fee amount
+  steps:
+    - intent: fees
+    - action: utter_fees
+    - action: utter_payments
+
+- rule: greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: ask for more anytime the user thanks
+  steps:
+  - intent: thank
+  - action: utter_welcome
+  - action: utter_more_questions
+
+- rule: understood
+  steps:
+  - intent: ok
+  - action: utter_more_questions
+
+- rule: college newsletter
+  steps:
+    - intent: newsletter
+    - action: utter_newsletter
+
+- rule: admission process
+  steps:
+    - intent: admission_process
+    - action: utter_admission_process
+
+- rule: college staff
+  steps:
+    - intent: staff
+    - action: utter_staff
+
+- rule: staff login
+  steps:
+    - intent: staff_login
+    - action: utter_staff_login
+
+- rule: tele_directory
+  steps:
+    - intent: tele_directory
+    - action: utter_tele_directory
+
+- rule: library
+  steps:
+    - intent: library
+    - action: utter_library
+
+- rule: vision and mission
+  steps:
+    - intent: college_vision
+    - action: utter_college_vision
+
+- rule: college trustees
+  steps:
+    - intent: college_trustees
+    - action: utter_college_trustees
+
+- rule: local management council
+  steps:
+    - intent: local_management
+    - action: utter_local_management

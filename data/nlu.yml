@@ -1,0 +1,650 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good bye
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thank
+  examples: |
+    - thank you
+    - thanks
+    - thank
+    - thank you for the help
+    - thanks for the help
+    - thanks for your help
+    - thank you for your help
+
+- intent: website
+  examples: |
+    - website
+    - college website
+    - college website?
+    - webpage
+    - website link
+    - college link
+
+- intent: departments
+  examples: |
+    - courses
+    - streams
+    - departments
+    - fields
+    - streams there
+    - departments are there for studying
+    - fields are there for studying
+    - courses are there studying
+    - stream
+    - field
+    - department
+    - course
+    - departments available for studying
+    - availbale fields
+    - courses available studying
+    - availbale field
+
+- intent: cutoff
+  examples: |
+    - cut off
+    - cutoff
+    - cut offs
+    - cut-off
+    - admission marks
+    - minimum marks
+    - minimum admission marks
+    - cet marks
+    - cet score
+    - required marks
+    - required admission marks
+    - required score
+    - required admission score
+    - 2019 cutoff
+    - 2019 cutoffs
+    - cutoff for 2019
+    - cutoffs for 2019
+    - 2020 cutoff
+    - 2020 cutoffs
+    - cutoff for 2020
+    - cutoffs for 2020
+    - 2021 cutoff
+    - 2021 cutoffs
+    - cutoff for 2021
+    - cutoffs for 2021
+
+- intent: comp_info
+  examples: |
+    - comps
+    - computer
+    - computer engineering
+    - comp
+    - comps info
+    - computer info
+    - computer engineering info
+    - comp info
+    - about comps
+    - about computer
+    - about computer engineering
+    - about comp
+    - comps infrastructure
+    - computer infrastructure
+    - computer engineering infrastructure
+    - comp infrastructure
+    - comps faculty
+    - computer faculty
+    - computer engineering faculty
+    - comp faculty
+
+- intent: elec_info
+  examples: |
+    - elec
+    - electronics
+    - Electronics and Computer Science Engineering
+    - electronic
+    - elec info
+    - electronics info
+    - Electronics and Computer Science Engineering info
+    - electronic info
+    - about elec
+    - about electronics
+    - about Electronics and Computer Science engineering
+    - about electronic
+    - elec infrastructure
+    - electronics infrastructure
+    - Electronics and Computer Science Engineering infrastructure
+    - electronic infrastructure
+    - elec faculty
+    - electronics faculty
+    - Electronics and Computer Science Engineering faculty
+    - electronic faculty
+
+- intent: mech_info
+  examples: |
+    - mech
+    - mechanical
+    - mechanical Engineering
+    - mech info
+    - mechanical info
+    - mechanical Engineering info
+    - about mech
+    - about mechanical
+    - about mechanical Engineering
+    - mech infrastructure
+    - mechanical infrastructure
+    - mechanical Engineering infrastructure
+    - mech faculty
+    - mechanical faculty
+    - mechanical Engineering faculty
+
+- intent: ai_info
+  examples: |
+    - ai
+    - artificial
+    - artificial intelligence
+    - Artificial Intelligence and Data Science Engineering
+    - ai and ds
+    - ai info
+    - artificial info
+    - artificial intelligence info
+    - Artificial Intelligence and Data Science Engineering info
+    - ai and ds info
+    - about ai
+    - about artificial
+    - about artificial intelligence
+    - about Artificial Intelligence and Data Science Engineering
+    - about ai and ds
+    - ai faculty
+    - artificial faculty
+    - artificial intelligence faculty
+    - Artificial Intelligence and Data Science Engineering faculty
+    - ai and ds faculty
+    - ai infrastructure
+    - artificial infrastructure
+    - artificial intelligence infrastructure
+    - Artificial Intelligence and Data Science Engineering infrastructure
+    - ai and ds infrastructure
+
+- intent: it_info
+  examples: |
+    - it
+    - information technology
+    - it info
+    - information technology info
+    - about it
+    - about information technology
+    - it faculty
+    - information technology faculty
+    - it infrastructure
+    - information technology infrastructure
+
+#- intent: comp_cutoff
+#  examples: |
+#    - comps cutoff
+#    - computer cutoff
+#    - computer engineering cutoff
+#    - comp cutoff
+#
+#- intent: elec_cutoff
+#  examples: |
+#    - elec cutoff
+#    - electronics cutoff
+#    - Electronics and Computer Science Engineering cutoff
+#    - electronic cutoff
+#
+#- intent: mech_cutoff
+#  examples: |
+#    - mech cutoff
+#    - mechanical cutoff
+#    - mechanical Engineering cutoff
+#
+#- intent: arti_cutoff
+#  examples: |
+#    - ai cutoff
+#    - artificial intelligence cutoff
+#    - Artificial Intelligence and Data Science Engineering cutoff
+#    - ai and ds cutoff
+#
+#- intent: prod_cutoff
+#  examples: |
+#    - prod cutoff
+#    - production cutoff
+#    - production Engineering cutoff
+
+- intent: address
+  examples: |
+    - location
+    - located
+    - address
+    - station
+    - college address
+    - college location
+    - college located
+    - college station
+    - what station
+    - which station
+
+- intent: office_hours
+  examples: |
+    - office working hours
+    - office hours
+    - office open time
+    - college open time
+    - office closes
+    - office closing
+
+- intent: ok
+  examples: |
+    - ok
+    - okay
+    - k
+    - fine
+    - understood
+    - got it
+
+- intent: events
+  examples: |
+    - event
+    - events
+    - extra curricular
+    - extracurricular
+    - college events
+    - events in college
+
+- intent: contact
+  examples: |
+    - contact
+    - call  office
+    - call  college
+    - call  campus
+    - contact campus
+    - contact college
+    - contact office
+    - reach office
+    - reach
+    - reach college
+    - reach campus
+    - reach office
+    - college number
+    - office number
+    - campus number
+
+- intent: fees
+  examples: |
+    - fees
+    - fees amount
+    - fees for b.e.
+    - fees for m.e.
+    - fee amount
+    - course fees
+    - course fees amount
+    - course fees for b.e.
+    - course fees for m.e.
+    - fees amount for b.e.
+    - fees amount for m.e.
+    - fee
+    - how much fee
+    - how much fees
+    - what is fees
+    - what is fee
+    - pay fees
+    - payment
+    - payments
+    - pay fee
+    - give fees
+    - send fees
+    - give fee
+    - send fee
+
+- intent: principal
+  examples: |
+    - principal name
+    - principal
+    - name of principal
+    - principals name
+    - who is the principal
+
+- intent: newsletter
+  examples: |
+    - newsletter
+    - news letter
+    - newsletters
+    - news letters
+
+- intent: medium
+  examples: |
+    - which medium
+    - medium college
+    - english medium
+    - college language
+    - which language
+    - language of college
+
+- intent: course_len
+  examples: |
+    - course length
+    - length of course
+    - years is the course
+    - years for course
+    - how long is the course
+    - course years
+
+- intent: parallel_work
+  examples: |
+    - work parallely
+    - parallel work
+    - parallel job
+    - job parallely
+    - simultaneous job
+    - job simultaneously
+    - simultaneous work
+    - work simultaneously
+
+- intent: affailiation
+  examples: |
+    - college affaliated with
+    - affaliates the college
+    - affaliates college
+    - affaliated with
+    - which boards
+    - which board
+    - college is under
+
+- intent: exam_conduct
+  examples: |
+    - conducts exam
+    - conducts exams
+    - exam conductor
+    - exam conductors
+    - exams are contucted by
+    - exam is contucted by
+
+- intent: notice
+  examples: |
+    - notice
+    - notices
+    - notice board
+    - announcements
+    - announcement
+    - latest news
+
+- intent: eligibility
+  examples: |
+    - eligible for admission
+    - eligibility for admission
+    - admission eligibility
+    - marks required for admission
+    - score required for admission
+    - percentage required for admission
+    - admission after hsc
+    - post hsc admission
+
+- intent: payments
+  examples: |
+    - payment portal
+    - make payments online
+    - online payment portal
+
+- intent: post_degree_choice
+  examples: |
+    - after graduation
+    - post graduation
+    - after degree
+    - after course
+    - after completion of course
+    - after completion of degree
+    - post degree
+    - post course
+    - post completion of course
+    - post completion of degree
+
+- intent: admission_process
+  examples: |
+    - how to admission
+    - admission process
+    - admission procedure
+    - procedure admission
+    - how to get admission
+    - apply for admission
+    - admission aplication
+    - admission phd
+    - admission ug
+    - admission under graduate
+    - admission pg
+    - admission post graduate
+
+- intent: admission_enquiry
+  examples: |
+    - admission enquiry
+    - enquire admission
+    - admission inquiry
+    - inquiry admission
+    - admission doubts
+    - admission queries
+    - admission query
+
+- intent: exam_process
+  examples: |
+    - exam process
+    - exam procedure
+    - examination process
+    - examination procedure
+    - exam rules
+    - examination rules
+
+- intent: entrance_exam
+  examples: |
+    - entrance exam
+    - entrance
+    - entrance exams
+    - required exams for eligibility
+    - required exams for admission
+
+- intent: question_paper_archive
+  examples: |
+    - question paper archive
+    - past question papers
+    - past papers
+    - old question papers
+    - old papers
+
+- intent: staff_login
+  examples: |
+    - staff login page
+    - staff signup page
+    - teacher signup page
+    - teacher login page
+
+- intent: required_attendance
+  examples: |
+    - minimum attendance
+    - required attendance
+    - lecture attendance
+    - practical attendance
+    - project attendance
+    - tutorial attendance
+
+- intent: college_info
+  examples: |
+    - college details
+    - college info
+    - college information
+    - college about
+    - about college
+    - about crce
+    - crce info
+    - crce information
+
+- intent: college_vision
+  examples: |
+    - college vision
+    - college mission
+    - college objective
+    - college aim
+    - crce mission
+    - crce vision
+    - crce objective
+    - crce aim
+
+- intent: college_trustees
+  examples: |
+    - college trustee
+    - college trustees
+    - trustee of college
+    - trustee for college
+    - trustees of college
+    - trustees for college
+
+- intent: local_management
+  examples: |
+    - local management
+    - management local
+    - management council
+    - council management
+    - local management council
+
+- intent: scholarship_scheme
+  examples: |
+    - scholarship scheme
+    - scholarship details
+    - scholarship information
+    - scholarship info
+    - yearly scholarship
+    - student scholarship
+
+- intent: student_council
+  examples: |
+    - stu co
+    - student council
+    - students council
+    - council of students
+    - student forum
+    - students forum
+    - forum of students
+
+- intent: staff
+  examples: |
+    - staff
+    - faculty
+    - professors
+    - teachers
+    - staffs
+
+- intent: tele_directory
+  examples: |
+    - telephone directory
+    - college telephone
+    - college telephones
+    - telephone directories
+
+- intent: library
+  examples: |
+    - library
+    - libraries
+    - library details
+    - library there
+
+- intent: curriculars
+  examples: |
+    - curriculars
+    - academic calendar details
+    - yearly calendar details
+    - academic yearly activities
+    - moodle
+    - syllabus
+    - moodle login
+
+- intent: student_portal
+  examples: |
+    - students portal
+    - student portal
+    - check results
+    - railway concession
+    - download hall ticket
+
+- intent: placements
+  examples: |
+    - placements policy
+    - placements stistics
+    - job recruiters
+    - campus placements
+    - percentage of placements
+    - percent of placements
+    - number of placements
+    - no of placements
+    - percentage of students placed
+    - percent of students placed
+    - number of students placed
+    - no of students placed
+
+
+#- intent: 2021_cutoff
+#  examples: |
+#    - 2021 cutoff
+#    - 2021 cutoffs
+#    - cutoff for 2021
+#    - cutoffs for 2021
+#
+#- intent: 2020_cutoff
+#  examples: |
+#    - 2020 cutoff
+#    - 2020 cutoffs
+#    - cutoff for 2020
+#    - cutoffs for 2020
+#
+#- intent: 2019_cutoff
+#  examples: |
+#    - 2019 cutoff
+#    - 2019 cutoffs
+#    - cutoff for 2019
+#    - cutoffs for 2019

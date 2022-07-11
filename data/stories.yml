@@ -1,0 +1,234 @@
+version: "2.0"
+
+stories:
+
+- story: ask website
+  steps:
+  - intent: website
+  - action: utter_website
+
+- story: department
+  steps:
+  - intent: departments
+  - action: utter_departments
+
+- story: location
+  steps:
+  - intent: address
+  - action: utter_address
+
+- story: event
+  steps:
+  - intent: events
+  - action: utter_events
+
+- story: contacting
+  steps:
+  - intent: contact
+  - action: utter_contact
+
+- story: principal info
+  steps:
+  - intent: principal
+  - action: utter_principal
+
+- story: exam process
+  steps:
+  - intent: exam_process
+  - action: utter_exam_process
+
+- story: entrance exam
+  steps:
+  - intent: entrance_exam
+  - action: utter_entrance_exam
+
+- story: which medium
+  steps:
+    - intent: medium
+    - action: utter_medium
+
+- story: question paper archive
+  steps:
+    - intent: question_paper_archive
+    - action: utter_question_paper_archive
+
+- story: required attendance
+  steps:
+    - intent: required_attendance
+    - action: utter_required_attendance
+
+- story: course length
+  steps:
+    - intent: course_len
+    - action: utter_course_len
+
+- story: work while studying
+  steps:
+    - intent: parallel_work
+    - action: utter_parallel_work
+
+- story: college affiliation
+  steps:
+    - intent: affailiation
+    - action: utter_affiliation
+
+- story: exam conduct
+  steps:
+    - intent: exam_conduct
+    - action: utter_affiliation
+
+- story: notices
+  steps:
+    - intent: notice
+    - action: utter_notice
+
+- story: cutoff
+  steps:
+    - intent: cutoff
+    - action: utter_cutoff
+
+- story: 2021 cutoff
+  steps:
+    - intent: 2021_cutoff
+    - action: utter_2021_CET_cutoff
+    - action: utter_2021_JEE_cutoff
+
+- story: 2020 cutoff
+  steps:
+    - intent: 2020_cutoff
+    - action: utter_2020_cutoff
+
+- story: 2019 cutoff
+  steps:
+    - intent: 2019_cutoff
+    - action: utter_2019_cutoff
+
+- story: comp info
+  steps:
+    - intent: comp_info
+    - action: utter_comp_info
+
+- story: elec info
+  steps:
+    - intent: elec_info
+    - action: utter_elec_info
+
+- story: mech info
+  steps:
+    - intent: mech_info
+    - action: utter_mech_info
+
+- story: ai info
+  steps:
+    - intent: ai_info
+    - action: utter_ai_info
+
+#- story: it info
+#  steps:
+#    - intent: it_info
+#    - action: utter_it_info
+
+#- story: ask comp cutoff
+#  steps:
+#   - intent: cutoff
+#   - action: utter_cutoff
+#   - intent: comp_cutoff
+#   - action: utter_comp_cutoff
+#
+#- story: ask elec cutoff
+#  steps:
+#    - intent: cutoff
+#    - action: utter_cutoff
+#    - intent: elec_cutoff
+#    - action: utter_elec_cutoff
+#
+#- story: ask mech cutoff
+#  steps:
+#    - intent: cutoff
+#    - action: utter_cutoff
+#    - intent: mech_cutoff
+#    - action: utter_mech_cutoff
+#
+#- story: ask arti cutoff
+#  steps:
+#    - intent: cutoff
+#    - action: utter_cutoff
+#    - intent: arti_cutoff
+#    - action: utter_arti_cutoff
+#
+#- story: ask prod cutoff
+#  steps:
+#    - intent: cutoff
+#    - action: utter_cutoff
+#    - intent: prod_cutoff
+#    - action: utter_prod_cutoff
+
+- story: admission enquiry
+  steps:
+    - intent: admission_enquiry
+    - action: utter_admission_enquiry
+
+- story: curriculars
+  steps:
+    - intent: curriculars
+    - action: utter_curriculars
+
+- story: scholarship scheme
+  steps:
+    - intent: scholarship_scheme
+    - action: utter_scholarship_scheme
+
+- story: student portal
+  steps:
+    - intent: student_portal
+    - action: utter_student_portal
+
+- story: student council
+  steps:
+    - intent: student_council
+    - action: utter_student_council
+
+- story: admit eligibility
+  steps:
+    - intent: eligibility
+    - action: utter_eligibility
+
+- story: payment
+  steps:
+    - intent: payments
+    - action: utter_payments
+
+- story: placements
+  steps:
+    - intent: placements
+    - action: utter_placements
+
+- story: office hours
+  steps:
+    - intent: office_hours
+    - action: utter_office_hours
+
+- story: after degree
+  steps:
+    - intent: post_degree_choice
+    - action: utter_post_degree_choice
+
+- story: about crce
+  steps:
+    - intent: college_info
+    - action: utter_college_info
+
+- story: vision and mission
+  steps:
+    - intent: college_vision
+    - action: utter_college_vision
+
+- story: college trustees
+  steps:
+    - intent: college_trustees
+    - action: utter_college_trustees
+
+- story: local management council
+  steps:
+    - intent: local_management
+    - action: utter_local_management
